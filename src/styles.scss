@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/bulma/bulma.sass';
+
+.alt-gradient-button {
+    background: linear-gradient(rgb(234,72,140), royalblue);
+    color: cornsilk;
+    font-weight: 600;
+
+    &:hover {
+        opacity: 0.90;
+        color: cornsilk;
+        box-shadow: 0px 0px 0px 5px rgb(234,72,140);
+    }
+    i.material-icons {
+        color: whitesmoke;
+        margin-right: 8px;
+        margin-left: -1px;
+    }
+
+    &:active {
+        opacity: 0.8;
+    }
+    &:focus {
+        color:whitesmoke;
+        opacity: 0.95;
+    }
+}
